@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body 
+        {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1
+        {
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+        #menustyle
+        {
+            width: 200px;
+            height: 400px;
+            position:fixed;
+            top: 20px;
+            left: 260px;
+            text-align: right;
+            line-height: 30px;   
+        }
+        #imagestyle
+        {
+            width: 530px;
+            height: 1550px;
+            position: absolute;
+            top: 20px;
+            left: 560px;
+            padding: 5px; 
+        }
+        a
+        {
+            text-decoration: none;
+            color: gray;
+            display: block;
+        }
+        .active
+        {
+	        color: black;
+        }
+        #wrapper
+        {
+            width: 530px;
+            height: 130px;
+            margin: auto 0;
+            position: relative;
+            top: 1650px;
+            left: 565px;
+        }
+        #footerdesign
+        {
+            width: 530px;
+            height: 130px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            border-top: 2px solid #A8A8A8;
+        }
+        #aboutme
+        {
+            width: 290px;
+            float: left;
+            line-height: 20px;
+        }
+        #contactme
+        {
+           float: left;
+        }
+        h5, p
+        {
+            font-size: small;
+        }
+        .clearFix
+        {
+            clear: both;
+        }
+        /*@media (max-width : 1109px) 
+        {
+            #menustyle
+            {
+                position:fixed;
+                top: 20px;
+                left: 40px;
+            }
+            #imagestyle
+            {
+                position: absolute;
+                top: 20px;
+                left: 340px;
+            }
+            #wrapper
+            {
+                position: relative;
+                top: 1650px;
+                left: 340px;
+            }
+        }*/
+    </style>
+</head>
+<body>
+    <nav id="menustyle">
+        <h1>kelly</h1>
+        <a class="active" href="index.html">Home</a>
+        <a href="#">Branding</a>
+        <a href="#">Design</a>
+        <a href="#">Identity</a>
+        <a href="#">Furniture</a>
+        <a href="#">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div id="imagestyle">
+        <img src="images/1.jpg" width="260" height="340">
+        <img src="images/2.jpg" width="260" height="340">
+        <img src="images/3.jpg" width="525" height="340">
+        <img src="images/4.jpg" width="400" height="225">
+        <img src="images/5.jpg" width="120" height="225">
+        <img src="images/6.jpg" width="190" height="210">
+        <img src="images/7.jpg" width="330" height="210">
+        <img src="images/8.jpg" width="525" height="365">
+    </div>
+    <div id="wrapper">
+    <footer id="footerdesign">
+        <nav id="aboutme">
+            <h5>About Me</h5>
+            <p>I am a web developer based in Hamburg, specializing in User Interface Design and Development.</p>
+        </nav>
+        <nav id="contactme">
+            <h5>Contact me</h5>
+            <p>Phone: +123 456 789</p>
+            <p>Email: some.email@gmail.com</p>
+            <p>Location: Some Street 100, Hamburg, DE</p>
+        </nav>
+    </footer>
+    </div>
+    <div class="clearFix">
+    </div>
+</body>
+</html>
