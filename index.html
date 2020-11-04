@@ -5,140 +5,672 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body 
+        body
         {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
+            background: #E5E5E5;
+            margin-left: 0px;
+            font-family: Helvetica Neue;
+            font-style: normal;
         }
-        h1
+        #wrap
         {
-            text-transform: uppercase;
-            font-size: 40px;
+            width: 320px;
+            height: 1560px;
+            background-color: white;
         }
-        #menustyle
+        .headerstyle
         {
-            width: 200px;
-            height: 400px;
-            position:fixed;
-            top: 20px;
-            left: 260px;
-            text-align: right;
-            line-height: 30px;   
-        }
-        #imagestyle
-        {
-            width: 530px;
-            height: 1550px;
             position: absolute;
-            top: 20px;
-            left: 560px;
-            padding: 5px; 
+            width: 320px;
+            height: 48px;
+            left: 0px;
+            top: 0px;
+            background: #333333; 
         }
-        a
+        .headerstyle p
         {
-            text-decoration: none;
-            color: gray;
+            position: absolute;
+            width: 103px;
+            height: 21px;
+            left: 47px;
+            top: 4px;
+            font-size: 14px;
+            color: #F2F2F2; 
+        }
+        #img1
+        {
+            position: absolute;
+            left: 3.12%;
+            right: 88.44%;
+            top: 25%;
+            bottom: 25%;
+        }
+        #img2
+        {
+            position: absolute;
+            left: 90.62%;
+            right: 4.38%;
+            top: 37.5%;
+            bottom: 37.5%;
+        }
+        #sidemenu
+        {
+            display: none;
+        }
+        #welcometext
+        {
+            position: absolute;
+            top: 120px;
+            left: 160px;
+            z-index:1;
+            width: 144px;
+            height: 60px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            text-align: right;
+            color: #F2F2F2;   
+        }
+        #img3
+        {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 48px;
+            z-index:0;
+            width: 320px;
+            height: 150px;
+        }
+        #latest
+        {
+            position: absolute;
+            width: 121px;
+            height: 30px;
+            left: 11px;
+            top: 222px;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 150%;
+            color: #000000;
+        }
+        .cardcontainer
+        {
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card1
+        {
+            width: 300px;
+            height: 490px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 280px;
+            border: 1px solid #CBD5E0;
+            box-sizing: border-box;
+            border-radius: 0px 0px 4px 4px; 
+        }
+        .card2
+        {
+            width: 300px;
+            height: 490px;
+            position: absolute;
+            top: 780px;
+            border: 1px solid #CBD5E0;
+            box-sizing: border-box;
+            border-radius: 0px 0px 4px 4px; 
+        }
+        .card3
+        {
+            display: none;
+            width: 300px;
+            height: 490px;
+            position: absolute;
+            top: 1290px;
+            border: 1px solid #CBD5E0;
+            box-sizing: border-box;
+            border-radius: 0px 0px 4px 4px; 
+        }
+        .card4
+        {
+            display: none;
+            width: 300px;
+            height: 490px;
+            position: absolute;
+            top: 1800px;
+            border: 1px solid #CBD5E0;
+            box-sizing: border-box;
+            border-radius: 0px 0px 4px 4px; 
+        }
+        .cardimg1
+        {
+            width: 298px; 
+            height: 192px;
+        }
+       .cardvector
+        {
+            position: absolute;
+            left: 10px;
+            top: 210px;
+            background: #A0AEC0; 
+        }
+        .vectortext
+        {
+            width: 89px;
+            height: 21px;
+            font-size: 14px;
+            color: #718096;
+            margin: 0px 30px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 10px;
+            top: 207px;
+        }
+        .question
+        {
+            position: absolute;
+            height: 60px;
+            left: 10px;
+            right: 24px;
+            top: 210px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+            color: #1A202C; 
             display: block;
         }
-        .active
+        .answer
         {
-	        color: black;
+           position: absolute;
+            height: 83px;
+            left: 10px;
+            right: 16px;
+            top: 285px;
+            font-size: 16px;
+            line-height: 130%;
+            color: #4A5568; 
+            display: block;
         }
-        #wrapper
+        .cardimg2
         {
-            width: 530px;
-            height: 130px;
-            margin: auto 0;
-            position: relative;
-            top: 1650px;
-            left: 565px;
+           position: absolute;
+            left: 16px;
+            top: 430px;
+            border-radius: 50%;
         }
-        #footerdesign
+        .name
         {
-            width: 530px;
-            height: 130px;
+            width: 124px;
+            height: 24px;
             position: absolute;
-            bottom: 0px;
-            left: 0px;
-            border-top: 2px solid #A8A8A8;
+            left: 70px;
+            top: 410px;
+            font-size: 16px;
+            line-height: 150%;
+            color: #4A5568;
         }
-        #aboutme
+        .date
         {
-            width: 290px;
-            float: left;
-            line-height: 20px;
+            width: 51px;
+            height: 24px;
+            position: absolute;
+            left: 70px;
+            top: 430px;
+            font-size: 16px;
+            line-height: 150%;
+            color: #718096;
         }
-        #contactme
+        #footer
         {
-           float: left;
+            height: 269px;
+            width: 320px;
+            position: absolute;
+            bottom: -850px;
+            background: #4F4F4F;
+            color: white;
         }
-        h5, p
+        #line1
         {
-            font-size: small;
+            position: absolute;
+            left: 5.31%;
+            right: 73.75%;
+            top: 5.2%;
+            bottom: 85.87%;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
         }
-        .clearFix
+        #line2
         {
-            clear: both;
+            position: absolute;
+            left: 5.31%;
+            right: 3.44%;
+            top: 15.24%;
+            bottom: 69.14%;
+            font-size: 16px;
+            line-height: 130%;
+            display: flex;
+            align-items: center; 
         }
-        /*@media (max-width : 1109px) 
+        #line3
         {
-            #menustyle
+            position: absolute;
+            left: 5.31%;
+            right: 73.75%;
+            top: 41.26%;
+            bottom: 49.81%;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+        }
+        .line4
+        {
+            position: absolute;
+            left: 5%;
+            right: 5%;
+            top: 48.7%;
+            bottom: 11.9%;
+            font-size: 16px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+        }
+        .line5
+        {
+            position: absolute;
+            left: 5%;
+            right: 5%;
+            top: 65%;
+            bottom: 11.9%;
+            font-size: 16px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+        }
+        .line6
+        {
+            position: absolute;
+            left: 5%;
+            right: 5%;
+            top: 84%;
+            bottom: 11.9%;
+            font-size: 16px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+        }
+        @media (min-width: 768px) /* tablet breakpoint */ 
+        {
+            #wrap
             {
-                position:fixed;
-                top: 20px;
-                left: 40px;
+                height: 1384px;
+                width: 768px;
             }
-            #imagestyle
+            .headerstyle
             {
+                width: 768px;
+            }
+            .headerstyle p{
+                left: 70px;
+            }
+            #img1{
+                width: 27px;
+                height: 24px;
+                left: 30px;
+                top: 15px;
+            }
+            #img2{
+                display: none;
+            }
+            #sidemenu{
                 position: absolute;
+                width: 229px;
+                height: 21px;
+                left: 522px;
+                top: 15px;
+                display: flex;
+            }   
+            #sidemenu a {
+                display: inline-block;
+                padding: 4px; 
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 150%;
+                text-decoration: none;
+                color: #F2F2F2;    
+            }
+            #welcometext{
+                top: 260px;
+                left: 350px;
+                z-index:1;
+                width: 400px;
+                height: 48px;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 150%;
+                text-align: right;
+            }
+            #img3{
+                width: 768px;
+                height: 300px;
+            }
+            #latest{
+                width: 121px;
+                height: 30px;
+                left: 29px;
+                top: 380px;
+                font-size: 20px;
+            }
+            .card1{
+                width: 609px;
+                height: 223px;
+                left: 75px;
+                top: 451px;
+            }
+            .card2{
+                width: 609px;
+                height: 223px;
+                left: 79px;
+                top: 715px;
+            }
+            .card3{
+                display: flex;
+                width: 609px;
+                height: 223px;
+                position: absolute;
+                left: 79px;
+                top: 983px;
+            }
+            .card4{
+                display: none;
+            }
+            .cardimg1{
+                height: 221px;
+                width: 192px;
+                left: 0px;
+                right: 417px;
+                top: 0px;
+                bottom: 0px;
+            }
+            .cardvector{
+                left: 205px;
+                top: 14px;
+            }
+            .vectortext{
+                width: 89px;
+                height: 21px;
+                left: 200px;
+                top: 10px;
+            }
+            .question{
+                height: 30px;
+                left: 200px;
+                right: 15px;
+                top: 39px;
+            }
+            .answer{
+                height: 63px;
+                left: 200px;
+                right: 16px;
+                top: 72px;
+                font-size: 15px;
+                line-height: 130%;
+            }
+            .cardimg2{
+                left: 200px;
+                top: 165px;
+            }
+            .name{
+                width: 124px;
+                height: 24px;
+                left: 260px;
+                top: 145px;
+            }
+            .date{
+                width: 51px;
+                height: 24px;
+                left: 260px;
+                top: 170px;
+            }
+            #footer{
+                position: absolute;
+                width: 768px;
+                height: 144px;
+                left: 0px;
+                top: 1248px;
+            }
+            #line1{
+                width: 160.8px;
+                height: 24px;
+                left: 41px;
+                top: 10px;
+            }
+            #line2{
+                width: 257px;
+                height: 42px;
+                left: 41px;
+                top: 54px;
+            }
+            #line3{
+                width: 160.8px;
+                height: 24px;
+                left: 405px;
+                top: 10px;
+            }
+            .line4{
+                left: 405px;
+                top: 17px;
+            }
+            .line5{
+                left: 405px;
+                top: 60px;
+            }
+            .line6{
+                left: 405px;
+                top: 100px;
+            }
+        }
+        @media (min-width: 1100px) /* desktop breakpoint */
+        {
+            #wrap{
+                width: 1250px;
+                height: 1134px;
+            }
+            .headerstyle{
+                width: 1250px;
+                height: 72px;
+            }
+            .headerstyle p{
+                width: 107.49px;
+                height: 21px;
+                left: 228px;
                 top: 20px;
-                left: 340px;
             }
-            #wrapper
-            {
-                position: relative;
-                top: 1650px;
-                left: 340px;
+            #img1{
+                left: 186.44px;
+                top: 28px;
             }
-        }*/
+            #img2{
+                display: none;
+            }
+            #sidemenu{
+                left: 843px;
+                top: 30px;
+
+            }
+            #welcometext{
+                width: 400px;
+                height: 48px;
+                left: 820px;
+                bottom: 27px;
+            }
+            #img3{
+                width: 1250px;
+                height: 300px;
+                top: 72px;
+            }
+            #latest{
+                left: 30px;
+               top: 400px;
+            }
+            .cardcontainer{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .card1{
+                width: 609px;
+                height: 223px;
+                left: 10px;
+                top: 449px;
+                flex-direction: row;
+            }
+            .card2{
+                width: 609px;
+                height: 223px;
+                left: 10px;
+                top: 696px;
+                flex-direction: row;
+            }
+            .card3{
+                width: 609px;
+                height: 223px;
+                left: 631px;
+                top: 448px;
+                display: flex;
+                flex-direction: row;
+            }
+            .card4{
+                width: 609px;
+                height: 223px;
+                left: 631px;
+                top: 697px;
+                display: flex;
+                flex-direction: row;
+            }
+            #footer{
+                width: 1250px;
+                height: 180px;
+                top: 962px;
+            }
+            #line1{
+                width: 160.8px;
+                height: 24px;
+                left: 150px;
+                top: 17px;
+            }
+            #line2{
+                width: 257px;
+                height: 42px;
+                left: 150px;
+                top: 54px;
+            }
+            #line3{
+                width: 160.8px;
+                height: 24px;
+                left: 770px;
+                top: 20px;
+            }
+            .line4{
+                width: 327px;
+                height: 72px;
+                left: 770px;
+                top: 45px;
+            }
+            .line5{
+                width: 327px;
+                height: 72px;
+                left: 770px;
+                top: 70px;
+            }
+            .line6{
+                width: 327px;
+                height: 72px;
+                left: 770px;
+                top: 95px;
+            }
+        }
     </style>
 </head>
 <body>
-    <nav id="menustyle">
-        <h1>kelly</h1>
-        <a class="active" href="index.html">Home</a>
-        <a href="#">Branding</a>
-        <a href="#">Design</a>
-        <a href="#">Identity</a>
-        <a href="#">Furniture</a>
-        <a href="#">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <div id="imagestyle">
-        <img src="images/1.jpg" width="260" height="340">
-        <img src="images/2.jpg" width="260" height="340">
-        <img src="images/3.jpg" width="525" height="340">
-        <img src="images/4.jpg" width="400" height="225">
-        <img src="images/5.jpg" width="120" height="225">
-        <img src="images/6.jpg" width="190" height="210">
-        <img src="images/7.jpg" width="330" height="210">
-        <img src="images/8.jpg" width="525" height="365">
+<div id="wrap">
+    <header class="headerstyle">
+        <img id="img1" src="Image/Vector.png">
+        <p>The coding Blog</p>
+        <img id="img2" src="Image/Vector-1.png">
+        <nav id="sidemenu">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Contacts</a>
+            <a href="#">faq</a>
+        </nav>
+    </header>
+    <div>
+        <div id="welcometext">Welcome to my Website</div>
+        <img id="img3" src="Image/Image.jpg">
     </div>
-    <div id="wrapper">
-    <footer id="footerdesign">
-        <nav id="aboutme">
-            <h5>About Me</h5>
-            <p>I am a web developer based in Hamburg, specializing in User Interface Design and Development.</p>
-        </nav>
-        <nav id="contactme">
-            <h5>Contact me</h5>
-            <p>Phone: +123 456 789</p>
-            <p>Email: some.email@gmail.com</p>
-            <p>Location: Some Street 100, Hamburg, DE</p>
-        </nav>
+    <div id="latest">
+        <div>Latest entries</div>
+    </div>
+    <div class="cardcontainer">
+    <div class="card1">
+        <img class="cardimg1" src="Image/card-left 2.png">
+        <img class="cardvector" src="Image/Vector copy.jpg">
+        <p class="vectortext">Members only</p>
+        <p class="question">Can coffee make you a better developer?</p>
+        <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+        <img class="cardimg2" src="Image/jonathan.jpg">
+        <p class="name">Jonathan Reinink</p>
+        <p class="date">Aug 18</p> 
+    </div>
+    <div class="card2">
+        <img class="cardimg1" src="Image/card-left 2.png">
+        <img class="cardvector" src="Image/Vector copy.jpg">
+        <p class="vectortext">Members only</p>
+        <p class="question">Can coffee make you a better developer?</p>
+        <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+        <img class="cardimg2" src="Image/jonathan.jpg">
+        <p class="name">Jonathan Reinink</p>
+        <p class="date">Aug 18</p>
+    </div>
+    <div class="card3">
+        <img class="cardimg1" src="Image/card-left 2.png">
+        <img class="cardvector" src="Image/Vector copy.jpg">
+        <p class="vectortext">Members only</p>
+        <p class="question">Can coffee make you a better developer?</p>
+        <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+        <img class="cardimg2" src="Image/jonathan.jpg">
+        <p class="name">Jonathan Reinink</p>
+        <p class="date">Aug 18</p>
+    </div>
+    <div class="card4">
+        <img class="cardimg1" src="Image/card-left 2.png">
+        <img class="cardvector" src="Image/Vector copy.jpg">
+        <p class="vectortext">Members only</p>
+        <p class="question">Can coffee make you a better developer?</p>
+        <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+        <img class="cardimg2" src="Image/jonathan.jpg">
+        <p class="name">Jonathan Reinink</p>
+        <p class="date">Aug 18</p>
+    </div>
+    <footer id="footer">
+        <p id="line1">About us</p>
+        <p id="line2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p id="line3">Contacts</p>
+        <p class="line4">Phone: +123 456 789 </p>
+        <p class="line5">Email: some.email@gmail.com </p>
+        <p class="line6">Location: Some Street 100, Hamburg, DE</p>
     </footer>
     </div>
-    <div class="clearFix">
-    </div>
+</div>
 </body>
 </html>
