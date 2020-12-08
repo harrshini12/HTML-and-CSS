@@ -1,6 +1,6 @@
 # Position Layout
 ## Goal 🥅
-Replicate to the best of your ability the linked image
+Webpage created using position Layout - absolute, relative and fixed.
 
 
 ## Specifications 🤓
