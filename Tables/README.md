@@ -13,4 +13,4 @@ Let's design 5 fancy table layouts
 
 ![Table 4](https://user-images.githubusercontent.com/72803388/101486358-cfbd5b80-395c-11eb-9ce2-1c28aea3718a.png)
 
-![Table 5](https://user-images.githubusercontent.com/72803388/101486362-d1871f00-395c-11eb-947c-e92098be0818.png)
+![Table 5](https://user-images.githubusercontent.com/72803388/101486564-22971300-395d-11eb-8821-9cd2c2f4bebb.png)
