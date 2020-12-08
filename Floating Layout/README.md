@@ -1,2 +1,10 @@
+# Floating Layout 🙀
+## Goal 🥅
+Replicate to the best of your ability the linked image
 
-- [Output Image] (Floating Layout/Images/Output image of Floating Layout.png)
+
+## Specifications 🤓
+### Image
+![Layout](Output image of Floating Layout.png)
+
+
